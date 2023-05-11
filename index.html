@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WikiCleaner</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .input-box, .output-box {
+        width: 80%;
+        height: 150px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        line-height: 1.5;
+        resize: none;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input id="input-box" class="input-box" type="text">
+      <button onclick="cleanInput()">Clean</button>
+      <br>
+      <textarea id="output-box" class="output-box" rows="10" cols="50"></textarea>
+    </div>
+
+    <script src="Cleaner.js"></script>
+  </body>
+</html>
